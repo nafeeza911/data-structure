@@ -1,6 +1,7 @@
+```
 #include<stdio.h>
 #include<stdlib.h>
-#define SIZE 10 
+#define SIZE 10
 
 int Q[SIZE];
 int front=0,rear=0;
@@ -39,6 +40,8 @@ printf("invalid option\n");
 while(1);
 return 0;
 }
+
+// Function to insert an element into the queue
 void enqueue(int x)
 {
 int temp;
@@ -51,6 +54,8 @@ rear=temp;
 Q[rear]=x;
 }
 }
+
+// Function to remove and return an element from the queue
 int dequeue()
 {
 if(front==rear)
@@ -64,6 +69,8 @@ front=(front+1)%SIZE;
 return Q[front];
 }
 }
+
+// Function to display all elements of the queue
 void display()
 {
 int i;
@@ -83,4 +90,4 @@ i=(i+1)%SIZE;
 }
 printf("\n");
 }
-
+```
