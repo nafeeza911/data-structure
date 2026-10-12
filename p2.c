@@ -45,6 +45,7 @@ printf("invalid option");
 while(1);
 }
 
+// Function to insert an element into the stack
 void push(int x)
 {
 if(sp==SIZE-1)
@@ -59,6 +60,7 @@ return;
 }
 }
 
+// Function to remove and return the top element of the stack
 int pop()
 {
 if(sp==-1)
@@ -72,6 +74,7 @@ return stk[sp--];
 }
 }
 
+// Function to display all elements of the stack
 void display()
 {
 int i;
