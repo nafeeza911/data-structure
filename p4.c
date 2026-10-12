@@ -1,3 +1,4 @@
+```
 #include<stdio.h>
 #include<stdlib.h>
 struct node
@@ -48,6 +49,8 @@ exit(0);
 }
 return 0;
 }
+
+// Function to insert a new element at the top of the stack
 struct node *push(struct node *sp,int data)
 {
 struct node *temp;
@@ -57,6 +60,8 @@ temp->next=sp;
 sp=temp;
 return sp;
 }
+
+// Function to remove and return the top element of the stack
 struct node *pop(struct node *sp,int*x){
 struct node *temp;
 if(sp!=NULL){
@@ -67,6 +72,8 @@ free(temp);
 }
 return sp;
 }
+
+// Function to display all elements of the stack
 void display(struct node *sp)
 {
 if(sp==NULL){
@@ -79,6 +86,8 @@ printf("%d\n",sp->data);
 sp=sp->next;
 }
 }
+
+// Function to search for an element in the stack
 int search(struct node *sp,int data){
 while(sp!=NULL){
 if(sp->data==data)
@@ -87,4 +96,4 @@ sp=sp->next;
 }
 return 0;
 }
-
+```
